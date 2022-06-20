@@ -9,9 +9,9 @@ import org.springframework.ui.Model;
 public class HomeController {
     @RequestMapping("/")
     public String numeros (Model model) {
-    int[] resultado = new int[30];
+    int[] resultado = new int[28];
     for(int i = 2;i <30;i++) {
-        resultado[i] = (i);
+        resultado[i - 2] = i;
     }
     model.addAttribute("numeros", resultado);
     return "/home/index";
