@@ -9,8 +9,8 @@ import org.springframework.ui.Model;
 public class HomeController {
     @RequestMapping("/")
     public String numeros (Model model) {
-    int[] resultado = new int[29];
-    for(int i = 2;i <29;i++) {
+    int[] resultado = new int[30];
+    for(int i = 2;i <30;i++) {
         resultado[i] = (i);
     }
     model.addAttribute("numeros", resultado);
